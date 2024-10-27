@@ -1,4 +1,4 @@
-/* css reset */
+/* css base */
 
 body {
   font-family: "Helvetica";
@@ -7,11 +7,16 @@ header {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: inherit;
+  font-size: 15px;
+  padding: 5px 10px;
+  border: none;
+  background-color: lightsalmon;
 }
-img,
-picture,
-video,
-canvas,
+img {
+  max-width: 100%;
+  height: auto;
+}
 svg {
   display: block;
   max-width: 100%;
@@ -29,15 +34,16 @@ h4,
 h5,
 h6 {
   font-style: italic;
-  color: blue;
+  color: blueviolet;
 }
 p {
   font-size: 18px;
-  color: red;
+  color: pink;
+  text-decoration: underline;
 }
 ul {
-  list-style-type: none;
-  margin: 0;
+  list-style-type: square;
+  margin-left: 10px;
   padding: 0;
 }
 html {
