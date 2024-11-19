@@ -1,0 +1,45 @@
+/* css reset */
+
+body {
+  font-family: "Helvetica";
+}
+header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: italic;
+  color: blue;
+}
+p {
+  font-size: 18px;
+  color: red;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+html {
+  line-height: 1.15;
+}
