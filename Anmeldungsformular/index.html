@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="index.js"></script>
+    </head>
+<main>
+	<form>
+
+		<header>
+			<h1> Anmeldungsformular </h1>
+		</header>
+
+		<div class="label-box">
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" placeholder="username">
+		</div>
+
+		<div class="label-box">
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="example@mail.com" required>
+		</div>
+
+		<div class="label-box">
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password">
+		</div>
+
+		<div class="label-box">
+			<label for="longAnswer">Warum willst du dich anmelden? (mind. 200 Wörter)</label>
+			<textarea id="longAnswer" placeholder="Ganz ausführlich aber..." required></textarea>
+			<small id="wordCountWarning" style="color: red; display: none;">Du musst mindestens 200 Wörter schreiben!</small>
+		</div>
+
+		<div class="label-box">
+			<label for="dropdown">Nochmal: Warum willst du dich anmelden?</label>
+			<select id="dropdown" required>
+				<option value="dropdown">Wähle die richtige Antwort...</option>
+				<option value="Ja">Ja</option>
+				<option value="Nein">Nein</option>
+				<option value="dropdown">Hab meine Gründe</option>
+				<option value="dropdown">Sag ich doch nicht!</option>
+				<option value="dropdown">Ich muss...</option>
+			</select>
+			<p id="error-message" style="color: red; display: none;">Deine Antwort ist falsch!</p>
+		</div>
+
+		<div class="label-box">
+
+			<legend>Bist du dir wirklich sicher?</legend>
+			<input type="radio" name="usure" value="Sicher" id="usure">
+			<label for="Ja">Sicher!</label>
+			<input type="radio" name="usure" value="GanzSicher" id="usure">
+			<label for="Nein">Ganz Sicher!</label>
+			<input type="radio" name="usure" value="GanzSicher2" id="usure">
+			<label for="Unsicher">Ganz ganz Sicher!</label>
+		</div>
+
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Button Hover Beispiel</title>
+			<link rel="stylesheet" href="styles.css">
+		</head>
+
+		<ul id="errorList"></ul>
+
+		<body>
+
+			<form>
+				<button type="submit" id="submitButton">Anmelden</button>
+			</form>
+
+			<script src="script.js"></script>
+		</body>
+
+</main>
