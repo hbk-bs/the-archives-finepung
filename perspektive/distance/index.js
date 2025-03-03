@@ -4,7 +4,8 @@
 function setup() {
 	// this is function scope
 	// setup is executed once
-	createCanvas(100, 100);
+	const canvas = createCanvas(100, 100);
+	canvas.parent('sketch')
 	background("pink");
 	//land
 	fill("lightyellow");
