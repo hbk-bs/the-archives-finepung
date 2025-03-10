@@ -5,44 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foto Seite</title>
     <style>
-    
-    .image-container {
-      position: relative; 
-      z-index: 1; 
-    }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-    .image-container img {
-      width: 100%; 
-      height: auto; 
-    }
+        .image-container {
+            position: relative;
+            z-index: 1;
+            background-color: #64b4da; /* Hellblauer Hintergrund hinter den Bildern */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
 
-    .back-to-home {
-      position: absolute; 
-      top: 20px; 
-      left: 20px; 
-      z-index: 5; 
-      color: white; 
-      padding: 10px 20px; 
-      border-radius: 5px; 
-      font-size: 16px; 
-      font-family: Arial, Helvetica, sans-serif;
-    }
-        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .back-to-home {
+            position: absolute;
+            top: -30px; /* Positioniert den Link oberhalb der Bilder */
+            left: 20px;
+            z-index: 5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: Arial, Helvetica, sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-home:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
     </style>
 </head>
 <body>
     <div class="image-container">
-    <a href="index.html">Zurück zur Startseite</a>
-    <img src="https://hbk-bs.github.io/the-archives-finepung/images/arduinoboard.JPG" alt="arduinoboard
-    ">
-    <img src="https://hbk-bs.github.io/the-archives-finepung/images/skelett.jpg" alt="skelett
-    ">
-    <img src="https://hbk-bs.github.io/the-archives-finepung/images/kabel.jpg" alt="Kabelkatze
-    ">
-    <img src="https://hbk-bs.github.io/the-archives-finepung/images/endergebnis.jpg" alt="Endergebnis
-    ">
-</div>
+        <!-- Der Link bleibt über den Bildern -->
+        <a href="index.html" class="back-to-home">Zurück zur Startseite</a>
+        <img src="https://hbk-bs.github.io/the-archives-finepung/images/arduinoboard.JPG" alt="Arduinoboard">
+        <img src="https://hbk-bs.github.io/the-archives-finepung/images/skelett.jpg" alt="Skelett">
+        <img src="https://hbk-bs.github.io/the-archives-finepung/images/kabel.jpg" alt="Kabelkatze">
+        <img src="https://hbk-bs.github.io/the-archives-finepung/images/endergebnis.jpg" alt="Endergebnis">
+    </div>
 </body>
 </html>
-
-
