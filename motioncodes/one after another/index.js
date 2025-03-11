@@ -13,8 +13,8 @@ function setup() {
   angleMode(DEGREES);
 
   for (let i = 0; i < numCircles; i++) {
-    circleY[i] = height / 2;  // Alle Kreise starten in der Mitte der Y-Achse
-    circleState[i] = 0;  // Alle Kreise starten im "warten" Zustand
+    circleY[i] = height / 2;  
+    circleState[i] = 0;  
   }
 }
 
@@ -25,23 +25,20 @@ function draw() {
   stroke(270);  
   fill(255, 0, 0); 
 
-  // Überprüfen, ob der aktuelle Kreis hüpfen sollte
   for (let i = 0; i < numCircles; i++) {
-    const x = width / (numCircles + 1) * (i + 1);  // Positioniere die Kreise gleichmäßig auf der X-Achse
+    const x = width / (numCircles + 1) * (i + 1);  
 
-    // Wenn der Kreis im "Hüpfen"-Zustand ist, bewege ihn
     if (circleState[i] == 1) {
-      circleY[i] -= 5;  // Der Kreis bewegt sich nach oben (nach oben springen)
-      if (circleY[i] <= height / 2 - bounceHeight) {  // Wenn der Kreis den höchsten Punkt erreicht hat
-        circleState[i] = -1;  // Ändere den Zustand zu "fallen"
+      circleY[i] -= 5;  
+      if (circleY[i] <= height / 2 - bounceHeight) {  
+        circleState[i] = -1; 
       }
     }
 
-    // Wenn der Kreis im "Fallen"-Zustand ist, bewege ihn nach unten
     if (circleState[i] == -1) {
-      circleY[i] += 5;  // Der Kreis fällt nach unten
-      if (circleY[i] >= height / 2) {  // Wenn der Kreis wieder unten angekommen ist
-        circleState[i] = 0;  // Ändere den Zustand zu "warten"
+      circleY[i] += 5;  
+      if (circleY[i] >= height / 2) {  
+        circleState[i] = 0; 
       }
     }
 
