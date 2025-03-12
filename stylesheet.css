@@ -99,5 +99,20 @@
       color:  #cc4040;
   }
 
-
+  footer {
+    color: #7488e2;
+    padding: 20px 0; 
+    text-align: center; 
+  }
+  
+  .footer-container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+  }
+  
+  .footer-text p {
+    font-size: 16px; 
+    margin: 0; 
+  }
  
