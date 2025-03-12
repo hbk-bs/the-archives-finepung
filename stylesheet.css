@@ -30,6 +30,12 @@
     margin-bottom: 20px;
     text-decoration: underline;
   }
+
+  .text-container {
+    text-align: left;
+    color:#fff;
+  }
+
   ul {
     list-style-type: none;
     padding: 0;
