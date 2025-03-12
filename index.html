@@ -1,98 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="de">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <title>Archiv Josefine Unger</title>
     <link rel="stylesheet" href="stylesheet.css" />
     <script defer src="index.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <h1>Archiv Josefine Unger</h1>
-      <h3>Grundlagen der digitalen Kommunikation</h3>
-      <h3>Wintersemester 24/25</h3>
+        <h1>Archiv Josefine Unger</h1>
+        <h3>Grundlagen der digitalen Kommunikation</h3>
+        <h3>Wintersemester 24/25</h3>
     </header>
 
     <main>
         <div class="links-box">
-      <h4>Analog Algorithm</h4>
-     
-      <ul id="analogList">
-        <li><a href="foto.html">Übersicht</a></li>
-      </ul>
-    </div>
-     
+            <h4 onclick="toggleDropdown('analogList')">Analog Algorithm</h4>
+            <ul id="analogList">
+                <li><a href="foto.html">Übersicht</a></li>
+            </ul>
+        </div>
+
+        <div class="links-box">
+            <h4 onclick="toggleDropdown('perspectiveList')">Perspective Design</h4>
+            <ul id="perspectiveList">
+                <li><a href="perspektive/distance/index.html">Distance</a></li>
+                <li><a href="perspektive/layering/index.html">Layering</a></li>
+                <li><a href="perspektive/vanishingpoint/index.html">Vanishing Point</a></li>
+                <li><a href="perspektive/horizon/index.html">Horizon</a></li>
+                <li><a href="perspektive/frosch/index.html">"Frosch"</a></li>
+                <li><a href="perspektive/rearview/index.html">Rear View</a></li>
+                <li><a href="reflektion.html">Reflektion</a></li>
+            </ul>
+        </div>
+
+        <div class="links-box">
+            <h4 onclick="toggleDropdown('interactiveList')">Interactive Design</h4>
+            <ul id="interactiveList">
+                <li><a href="foto2.html">Erste Idee und Reflektion</a></li>
+                <li><a href="Anmeldungsformular/index.html">Anmeldeformular</a></li>
+            </ul>
+        </div>
+
+        <div class="links-box">
+            <h4 onclick="toggleDropdown('motionList')">Motion Design</h4>
+            <ul id="motionList">
+                <li><a href="motioncodes/spiral/index.html">Spiral</a></li>
+                <li><a href="motioncodes/around/index.html">Around</a></li>
+                <li><a href="motioncodes/motion 5/index.html">Intertwined</a></li>
+                <li><a href="motioncodes/one after another/index.html">One After Another</a></li>
+                <li><a href="motioncodes/towards the middle/index.html">Towards the Middle</a></li>
+                <li><a href="reflektion2.html">Reflektion</a></li>
+            </ul>
+        </div>
+
+        <div class="links-box">
+            <h4 onclick="toggleDropdown('psyicalcomputingList')">Blinkenlichten</h4>
+            <ul id="psyicalcomputingList">
+                <li><a href="foto3.html">Fotos und Reflektion</a></li>
+                <li><a href="video.html">Videos</a></li>
+            </ul>
+        </div>
     </main>
-    </body>
-    </html>
 
-<main>
-    <div class="links-box">
-  <h4>Perspective Design</h4>
- 
-  <ul id="perspectiveList">
-    <li><a href="perspektive/distance/index.html">Distance</a></li>
-    <li><a href="perspektive/layering/index.html">Layering</a></li>
-    <li><a href="perspektive/vanishingpoint/index.html">Vanishing Point</a></li>
-    <li><a href="perspektive/horizon/index.html">Horizon</a></li>
-    <li><a href="perspektive/frosch/index.html">"Frosch"</a></li>
-    <li><a href="perspektive/rearview/index.html">Rear View</a></li>
-    <li><a href="reflektion.html">Reflektion</a></li>
-
-  </ul>
-</div>
- 
-</main>
+    <script>
+        function toggleDropdown(id) {
+            const menu = document.getElementById(id);
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
 </body>
 </html>
-
-
-<main>
-    <div class="links-box">
-  <h4>Interactive Design</h4>
- 
-  <ul id="interactiveList">
-    <li><a href="foto2.html">Erste Idee und Reflektion</a></li>
-    <li><a href="Anmeldungsformular/index.html">Anmeldeformular</a></li>
-  </ul>
-</div>
- 
-</main>
-</body>
-</html>
-
-<main>
-    <div class="links-box">
-  <h4>Motion Design</h4>
- 
-  <ul id="motionList">
-    <li><a href="motioncodes/spiral/index.html">Spiral</a></li>
-    <li><a href="motioncodes/around/index.html">Around</a></li>
-    <li><a href="motioncodes/motion 5/index.html">Intertwined</a></li>
-    <li><a href="motioncodes/one after another/index.html">One After Another</a></li>
-    <li><a href="motioncodes/towards the middle/index.html">Towards the Middle</a></li>
-    <li><a href="reflektion2.html">Reflektion</a></li>
-  </ul>
-</div>
- 
-</main>
-</body>
-</html>
-
-<main>
-    <div class="links-box">
-  <h4>Blinkenlichten</h4>
- 
-  <ul id="psyicalcomputingList">
-    
-    <li><a href="foto3.html">Fotos und Reflektion</a></li>
-    <li><a href="video.html">Videos</a></li>
-  </ul>
-</div>
- 
-</main>
-</body>
-</html>
-
