@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Seite</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .image-container {
+            position: relative;
+            z-index: 1;
+            background-color: #64b4da; /* Hellblauer Hintergrund hinter den Bildern */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .back-to-home {
+            position: absolute;
+            top: -30px; /* Positioniert den Link oberhalb der Bilder */
+            left: 20px;
+            z-index: 5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: Arial, Helvetica, sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-home:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .text-container {
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        .text-container p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .text-container p.container {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            color: #64b4da;
+        }
+
+        footer {
+    color: #7488e2;
+    padding: 20px 0; 
+    text-align: center; 
+  }
+  
+  .footer-container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+  }
+  
+  .footer-text p {
+    font-size: 16px; 
+    margin: 0; 
+  }
+ 
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        
+        <a href="index.html" class="back-to-home">Zurück zur Startseite</a>
+
+    
+        <video width="400" height="450" controls loop>
+            <source src="https://hbk-bs.github.io/the-archives-finepung/images/video1.mp4" type="video/mp4">
+            <source src="https://hbk-bs.github.io/the-archives-finepung/images/video1.webm" type="video/webm">
+            <source src="https://hbk-bs.github.io/the-archives-finepung/images/video1.ogv" type="video/ogg">
+            Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+        <video width="400" height="450" controls loop>
+            <source src="https://hbk-bs.github.io/the-archives-finepung/images/video2.mp4" type="video/mp4">
+            <source src="https://hbk-bs.github.io/the-archives-finepung/images/video2.webm" type="video/webm">
+            <source src="https://hbk-bs.github.io/the-archives-finepung/images/video2.ogv" type="video/ogg">
+            Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-text">
+            <p> Josefine Unger | Visuelle Kommunikation | HBK Braunschweig </p>
+          </div>
+        </div>
+      </footer>
+
+
+</body>
+</html>
